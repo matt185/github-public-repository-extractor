@@ -5,3 +5,19 @@ environments:
 - name: dev
 - name: staging
 - name: prod
+plugins:
+  extractors:
+  - name: tap-github
+    variant: meltanolabs
+    pip_url: meltanolabs-tap-github
+    config:
+      searches:
+      - search_type: search_repos
+        name: public_repos
+        query: user:torvalds is:public
+    select:
+    - repositories.name
+    - repositories.stargazers_count
+    - repositories.description
+    - repositories.created_at
+    - repositories.updated_at
