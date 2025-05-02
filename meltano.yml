@@ -21,3 +21,9 @@ plugins:
     - repositories.description
     - repositories.created_at
     - repositories.updated_at
+  loaders:
+  - name: target-sqlite
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/target-sqlite.git
+    config:
+      database: ./output/database.db
