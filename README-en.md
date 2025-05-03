@@ -14,7 +14,21 @@ This project allows you to extract the data of all the public repostitory of a s
 
 ## Project Setup
 
-### 1. **Install Meltano**
+### 1. **Set Environment Variable**
+
+On **Windows (PowerShell)**:
+
+```bash
+$env:PYTHONIOENCODING = "utf-8"
+```
+
+On **Mac/Linux (Bash)**:
+
+```bash
+export PYTHONIOENCODING=utf-8
+```
+
+### 2. **Install Meltano**
 
 To install the latest version:
 
@@ -28,7 +42,7 @@ Or, to install the version specified in this project:
 pip install -r requiremets.txt
 ```
 
-### 2.**Install project dependency**:
+### 3.**Install project dependency**:
 
 Install project dependencies using:
 
