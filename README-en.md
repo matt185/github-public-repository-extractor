@@ -16,13 +16,13 @@ This project allows you to extract the data of all the public repostitory of a s
 
 ### 1. **Set Environment Variable**
 
-On **Windows (PowerShell)**:
+On **Windows**:
 
 ```bash
 $env:PYTHONIOENCODING = "utf-8"
 ```
 
-On **Mac/Linux (Bash)**:
+On **Mac/Linux**:
 
 ```bash
 export PYTHONIOENCODING=utf-8
@@ -90,14 +90,14 @@ meltano select tap-github --list --all
 
 This command will delete the existing SQLite database and generate a new one in the output/ folder:
 
-On **Windows (PowerShell)**:
+On **Windows**:
 
 ```bash
 Remove-Item .\output\database.db
 meltano run --full-refresh tap-github target-sqlite
 ```
 
-On **Mac/Linux (Bash)**:
+On **Mac/Linux**:
 
 ```bash
 rm output\database.db
